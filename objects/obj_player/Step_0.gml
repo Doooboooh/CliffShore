@@ -1,40 +1,72 @@
-// 键盘输入
-move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
-move_x = move_x*move_speed;
-
-
-
 // 移动代码
-if place_meeting(x,y+1,obj_platform)
+
+// 受伤时间
+if alarm_get(0) > 0
 {
-	move_y = 0;
-	
-	if keyboard_check(vk_space)
+	move_x = -hurt_direction*hurt_force;
+}
+// 攻击时间
+else if alarm_get(1) > 0
+{
+	move_x = move_speed*input_x;
+}
+else if alarm_get(2) > 0
+{
+	move_x = move_speed*input_x;
+}
+else if on_ground 
+{
+	move_x = move_speed*input_x;
+	// 音效
+	if alarm_get(4)<=0 && move_x!= 0
 	{
-		move_y = -jump_speed;
+		audio_play_sound(snd_run,0,false);
+		alarm_set(4,27)
 	}
-}
-else if move_y < 10
-{
-	move_y += 0.5;
-}
-
-move_and_collide(move_x,move_y,obj_platform)
-
-// 动画控制
-
-
-if move_x != 0
-{
-	// 修改动画
-	sprite_index = spr_run;
-	// 修改人物朝向
-	image_xscale = sign(move_x);
 }
 else
 {
-	// 修改动画
-	sprite_index = spr_idle;
+	move_x = move_speed*input_x;
 }
+
+if on_ground
+{
+	if input_y > 0 
+	{
+		move_y = -jump_speed;
+	}
+	else move_y = 0;
+}
+else 
+{
+	// 可变化跳跃高度
+	if space_holding move_y += grav*0.5;
+	else move_y += grav;
+}
+
+
+// 下落速度限制
+move_y = max(move_y,-jump_speed);
+
+// 靠近地面检测，避免卡住
+if place_meeting(x,y+move_y,obj_platform)&&place_meeting(x,y+2,obj_platform)!=true
+{
+	for (var _i = 1; _i <= move_y; _i++) 
+	{
+		if place_meeting(x,y+_i,obj_platform) 
+		{
+			y=y+_i-1;
+			move_and_collide(move_x,0,obj_platform)
+			break;
+		}
+	}
+}
+else 
+{
+	move_and_collide(move_x,move_y,obj_platform)
+}
+// 卡墙debug
+// show_debug_message("当前值：" + string(y));
+
 
 
