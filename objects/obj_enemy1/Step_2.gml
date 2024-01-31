@@ -1,6 +1,4 @@
-// 动画控制
-
-
+/// @description 动画控制
 
 if hp <= 0
 {
@@ -8,23 +6,26 @@ if hp <= 0
 	instance_destroy();
 }
 // 受伤时间
-else if alarm_get(0)>0
+else if hurting
 {
 	sprite_index = spr_enemy1_hurt;
-	image_xscale = -hurt_direction;
 }
-else if alarm_get(10)>0
+else if attacking
 {
 	sprite_index = spr_enemy1_attack;
 }
-else if move_x != 0
+else if walking
 {
 	sprite_index = spr_enemy1_walk;
-	image_xscale = sign(move_x)
+	image_xscale = sign(move_direction);
 }
-else 
+else if idle
 {
 	sprite_index = spr_enemy1_idle;
+}
+else
+{
+	show_debug_message("enemy1 状态错误!");
 }
 
 

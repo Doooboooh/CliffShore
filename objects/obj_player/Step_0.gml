@@ -1,72 +1,61 @@
-// 移动代码
-
-// 受伤时间
-if alarm_get(0) > 0
+/// @description 移动控制
+if hurting
 {
-	move_x = -hurt_direction*hurt_force;
+	move_x = -hurt_direction*hurting_force;
 }
-// 攻击时间
-else if alarm_get(1) > 0
+else if attacking
 {
-	move_x = move_speed*input_x;
+	move_x = 0;
 }
-else if alarm_get(2) > 0
+else if jumping||running||falling
 {
-	move_x = move_speed*input_x;
+	move_x = move_direction * move_speed;
 }
-else if on_ground 
+else if idle
 {
-	move_x = move_speed*input_x;
-	// 音效
-	if alarm_get(4)<=0 && move_x!= 0
-	{
-		audio_play_sound(snd_run,0,false);
-		alarm_set(4,27)
-	}
+	move_x = 0;
 }
 else
 {
-	move_x = move_speed*input_x;
+	show_debug_message("player1 状态错误!");
 }
 
-if on_ground
+if jumping && jump_once == 0
 {
-	if input_y > 0 
-	{
-		move_y = -jump_speed;
-	}
-	else move_y = 0;
+	jump_once = 1;
+	move_y = -jump_speed;
+	move_and_collide(move_x,move_y,obj_platform);
 }
-else 
+else if on_ground
+{
+	move_y = 0;
+	move_and_collide(move_x,move_y,obj_platform);
+}
+else//非跳跃帧，空中或者落地
 {
 	// 可变化跳跃高度
 	if space_holding move_y += grav*0.5;
 	else move_y += grav;
-}
-
-
-// 下落速度限制
-move_y = max(move_y,-jump_speed);
-
-// 靠近地面检测，避免卡住
-if place_meeting(x,y+move_y,obj_platform)&&place_meeting(x,y+2,obj_platform)!=true
-{
-	for (var _i = 1; _i <= move_y; _i++) 
+	
+	// 最大下落速度限制
+	move_y = min(move_y,jump_speed);
+	
+	
+	// 落地检测，避免卡墙
+	if place_meeting(x,y+move_y,obj_platform)&&place_meeting(x,y+2,obj_platform)!=true
 	{
-		if place_meeting(x,y+_i,obj_platform) 
+		for (var _i = 1; _i <= move_y; _i++) 
 		{
-			y=y+_i-1;
-			move_and_collide(move_x,0,obj_platform)
-			break;
+			if place_meeting(x,y+_i,obj_platform) 
+			{
+				y=y+_i-1;
+				move_and_collide(move_x,0,obj_platform)
+				break;
+			}
 		}
 	}
+	else move_and_collide(move_x,move_y,obj_platform)
 }
-else 
-{
-	move_and_collide(move_x,move_y,obj_platform)
-}
-// 卡墙debug
-// show_debug_message("当前值：" + string(y));
 
 
 

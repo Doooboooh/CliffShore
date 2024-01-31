@@ -1,18 +1,26 @@
+/// @description 位置控制
 
-
-if alarm_get(0) > 0
+if hurting
 {
-	move_x = -hurt_direction*hurt_force;
+	move_x = -hurting_direction*hurting_force;
 }
-else if alarm_get(10)>0
+else if attacking
 {
 	move_x = 0;
 }
-else 
+else if walking
 {
 	move_x = move_direction*move_speed;
 }
-move_y = jump_direction*jump_speed;
+else if idle
+{
+	move_x = 0;
+}
+else
+{
+	show_debug_message("enemy1 状态错误!");
+}
 
-move_and_collide(move_x,move_y,obj_platform)
+move_y = 0;
 
+move_and_collide(move_x,move_y,obj_platform);

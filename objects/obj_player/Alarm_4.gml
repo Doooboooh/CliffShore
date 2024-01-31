@@ -1,6 +1,7 @@
-/// @description  音效计时器
+/// @description  射箭动画
 // 你可以在此编辑器中写入代码 
-
+shooting = false;
+idle = true;
 
 
 
