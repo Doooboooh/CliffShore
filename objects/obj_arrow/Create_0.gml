@@ -16,10 +16,4 @@ vy = 0;
 
 speed = move_speed;
 
-if obj_player.image_xscale == 1 
-{
-	direction = 0;
-}
-else direction = 180;
 
-image_xscale = obj_player.image_xscale;

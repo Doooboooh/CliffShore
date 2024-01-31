@@ -1,7 +1,7 @@
 /// @description 移动控制
 if hurting
 {
-	move_x = -hurt_direction*hurting_force;
+	move_x = -hurting_direction*hurting_force;
 }
 else if attacking
 {

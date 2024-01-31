@@ -34,7 +34,5 @@ landing = false;
 // 状态变量的附属变量
 hurting_direction = 0;
 hurting_force = 0;
-_hurt_source = obj_enemy_knife;
-_hurt_souce_enable_last = false;
 jump_num = 0;
 jump_once = 0;

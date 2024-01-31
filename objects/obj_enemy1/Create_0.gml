@@ -4,7 +4,7 @@ event_inherited();
 // 属性变量
 hp = 10;
 attack = 1;
-attack_force = 1;
+attack_force = 0.02;
 move_speed = 0.5;
 
 // 控制变量
