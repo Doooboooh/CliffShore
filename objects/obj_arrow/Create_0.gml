@@ -11,7 +11,7 @@
 event_inherited();
 
 move_speed = 8;
-grav = 0.1;
+grav = 0;
 vy = 0;
 
 speed = move_speed;

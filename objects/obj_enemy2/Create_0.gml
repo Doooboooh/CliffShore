@@ -14,6 +14,7 @@ move_speed = 0.2;
 move_x = 0;
 move_y = 0;
 move_direction = choose(-1,1);
+move_distance = 0;
 
 // 状态变量
 hurting = false;
@@ -28,4 +29,5 @@ next_state = 0;
 hurting_direction = 0;
 hurting_force = 0;
 attacking_direction = 1;
+skilling2_once = true;
 alarm_set(1,120);

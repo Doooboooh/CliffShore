@@ -20,8 +20,15 @@ else if skilling1
 	sprite_index = spr_enemy2_skill1;
 	image_xscale = sign(move_direction);
 }
-else if skilling2
+else if skilling2 && skilling2_once
 {
+	skilling2_once = false;
+	if instance_exists(obj_player)
+	{
+		instance_create_layer(obj_player.x-150,obj_player.y,layer,obj_enemy3_appear);
+		instance_create_layer(obj_player.x+150,obj_player.y,layer,obj_enemy3_appear);
+		instance_create_layer(obj_player.x,obj_player.y,layer-150,obj_enemy3_appear);
+	}
 	sprite_index = spr_enemy2_skill2;
 	image_xscale = sign(move_direction);
 }

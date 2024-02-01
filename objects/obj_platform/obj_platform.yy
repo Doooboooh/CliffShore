@@ -9,7 +9,10 @@
     "name": "environment",
     "path": "folders/Objects/environment.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_platform_parent",
+    "path": "objects/obj_platform_parent/obj_platform_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "platform",
-    "path": "sprites/platform/platform.yy",
+    "name": "spr_platform",
+    "path": "sprites/spr_platform/spr_platform.yy",
   },
   "spriteMaskId": null,
   "visible": false,

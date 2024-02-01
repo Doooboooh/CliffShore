@@ -3,7 +3,8 @@
 
 if skilling1 
 {
-	move_x = move_direction*move_speed;
+	if alarm_get(1) >= 90 move_x = move_distance/90;
+	else  move_x = -move_distance/90
 }
 else if hurting
 {
@@ -19,7 +20,7 @@ else if attacking
 }
 else if walking
 {
-	move_x = move_direction*move_speed;
+	move_x = move_direction*move_distance/60;
 }
 else if idle
 {

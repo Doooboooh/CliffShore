@@ -7,7 +7,7 @@ event_inherited();
 hp = 5;
 attack = 1;
 attack_force = 0.02;
-move_speed = 2;
+move_speed = 1;
 
 // 控制变量
 speed = move_speed;

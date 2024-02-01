@@ -3,7 +3,10 @@ input_x = 0;
 jump_pressed = false;
 attack_pressed = false;
 shoot_pressed = false;
+crouch_pressed = false;
+dash_pressed = false;
 space_holding = false;
+
 
 // 属性变量
 hp = 5;
@@ -15,24 +18,31 @@ jump_speed = 6;
 move_x = 0;
 move_y = 0;
 move_direction = 0;
+face_direction = 1;
 
 on_ground = true;
 under_ceiling = false;
 
 
 // 状态变量
-idle = true;
-hurting = false;
-attacking = false;
-shooting = false;
-jumping = false;
-rising = false;
-running = false;
-falling = false;
-landing = false;
+state = 0;
+once = true;
+idle = true;		// 0
+hurting = false;	// 1
+attacking = false;	// 2
+shooting = false;	// 3
+jumping = false;	// 4
+crouching = false;	// 5
+dashing = false;	// 6
+rising = false;		// 7
+running = false;	// 8
+falling = false;	// 9
+landing = false;	// 10
+
 
 // 状态变量的附属变量
 hurting_direction = 0;
 hurting_force = 0;
 jump_num = 0;
+dash_num = 0;
 jump_once = 0;

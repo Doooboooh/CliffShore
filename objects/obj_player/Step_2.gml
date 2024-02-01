@@ -1,16 +1,6 @@
 // 动画控制
-if move_y <= 0 && on_ground==false
-{
-	rising = true;
-	falling = false;
-	idle = false;
-}
-else if move_y> 0
-{
-	falling = true;
-	rising = false;
-	idle = false;
-}
+
+
 
 
 // 死亡动画
@@ -20,50 +10,63 @@ if hp <= 0
 	instance_destroy();
 }
 // 受伤时间
-else if hurting
+else if state == 1
 {
 	sprite_index = spr_player_hurt;
 }
 // 攻击时间
-else if attacking
+else if state == 2
 {
 	sprite_index = spr_player_attack3;
+	image_xscale = face_direction;
+	instance_create_layer(x,y,layer,obj_knife);
 }
 // 攻击时间
-else if shooting
+else if state == 3
 {
 	sprite_index = spr_player_shooting;
+	image_xscale = face_direction;
 }
-else if idle
+else if state == 5
+{
+	sprite_index = spr_player_crouch;
+	image_xscale = face_direction;
+}
+else if state == 6
+{
+	sprite_index = spr_player_dash;
+	image_xscale = face_direction;
+}
+else if state == 0
 {
 	sprite_index = spr_player_idle;
 }
 // 掉落时间
-else if falling
+else if state == 9
 {
 	// 修改动画
 	sprite_index = spr_player_falling;
 	// 修改人物朝向
-	if move_direction != 0 image_xscale = sign(move_direction);
+	image_xscale = face_direction;
 }
 // 上升时间
-else if jumping
+else if state == 4
 {
 	sprite_index = spr_player_jumping;
 }
-else if rising
+else if state == 7
 {
 	// 修改动画
 	sprite_index = spr_player_rising;
 	// 修改人物朝向
-	if move_direction != 0 image_xscale = sign(move_direction);
+	image_xscale = face_direction;
 }
-else if running
+else if state == 8
 {
 	// 修改动画
 	sprite_index = spr_player_run;
 	// 修改人物朝向
-	if move_direction != 0 image_xscale = sign(move_direction);
+	image_xscale = face_direction;
 }
 else
 {

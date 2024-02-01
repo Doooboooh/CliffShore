@@ -1,35 +1,35 @@
 /// @description 移动控制
-if hurting
+if state == 1
 {
 	move_x = -hurting_direction*hurting_force;
 }
-else if attacking
+else if state == 5
 {
 	move_x = 0;
 }
-else if jumping||running||falling
-{
-	move_x = move_direction * move_speed;
-}
-else if idle
+else if state == 0
 {
 	move_x = 0;
+}
+else if state == 6
+{
+	move_x = face_direction * move_speed*2.5;
 }
 else
 {
-	show_debug_message("player1 状态错误!");
+	move_x = move_direction * move_speed;
 }
 
-if jumping && jump_once == 0
+if state == 4 && jump_once == 0
 {
 	jump_once = 1;
 	move_y = -jump_speed;
-	move_and_collide(move_x,move_y,obj_platform);
+	move_and_collide(move_x,move_y,obj_platform_parent);
 }
 else if on_ground
 {
 	move_y = 0;
-	move_and_collide(move_x,move_y,obj_platform);
+	move_and_collide(move_x,move_y,obj_platform_parent);
 }
 else//非跳跃帧，空中或者落地
 {
@@ -42,19 +42,19 @@ else//非跳跃帧，空中或者落地
 	
 	
 	// 落地检测，避免卡墙
-	if place_meeting(x,y+move_y,obj_platform)&&place_meeting(x,y+2,obj_platform)!=true
+	if place_meeting(x,y+move_y,obj_platform_parent)&&place_meeting(x,y+2,obj_platform_parent)!=true
 	{
 		for (var _i = 1; _i <= move_y; _i++) 
 		{
-			if place_meeting(x,y+_i,obj_platform) 
+			if place_meeting(x,y+_i,obj_platform_parent) 
 			{
 				y=y+_i-1;
-				move_and_collide(move_x,0,obj_platform)
+				move_and_collide(move_x,0,obj_platform_parent)
 				break;
 			}
 		}
 	}
-	else move_and_collide(move_x,move_y,obj_platform)
+	else move_and_collide(move_x,move_y,obj_platform_parent)
 }
 
 
