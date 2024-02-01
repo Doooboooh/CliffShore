@@ -16,5 +16,5 @@ if hurting == false
 	hurting = true;
 	idle = false;
 	hp = hp - other.attack;
-	alarm_set(0,20);
+	alarm_set(0,60);
 }

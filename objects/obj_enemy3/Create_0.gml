@@ -7,10 +7,12 @@ event_inherited();
 hp = 5;
 attack = 1;
 attack_force = 0.02;
-move_speed = 0.8;
+move_speed = 2;
 
 // 控制变量
-
+speed = move_speed;
+direction = point_direction(x, y, obj_player.x, obj_player.y)
+alarm_set(1,60);
 
 // 状态变量
 hurting = false;
