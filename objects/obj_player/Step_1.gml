@@ -1,6 +1,8 @@
 /// @description 按键输入和状态选择
 // 按键检测
-move_direction = keyboard_check(ord("D"))-keyboard_check(ord("A"));
+right_wall_grab_pressed = keyboard_check(ord("D"));
+left_wall_grab_pressed = keyboard_check(ord("A"));
+move_direction = right_wall_grab_pressed-left_wall_grab_pressed;
 if move_direction != 0 face_direction = move_direction;
 jump_pressed = keyboard_check(vk_space)||keyboard_check(ord("K")) ;
 attack_pressed =  keyboard_check(ord("J"));
@@ -14,6 +16,11 @@ if place_meeting(x,y+2,obj_platform_parent) on_ground = true;
 else on_ground = false;
 if place_meeting(x,y+34,obj_platform_parent) under_ceiling = true;
 else under_ceiling = false;
+// 墙体检测
+if place_meeting(x-14,y,obj_platform_parent) left_have_wall = true;
+else left_have_wall = false;
+if place_meeting(x+15,y,obj_platform_parent) right_have_wall = true;
+else right_have_wall = false;
 
 // 状态控制
 if attack_pressed&&  once && (state == 0 || state == 5 || state == 7 || state == 8 || state == 9)
@@ -45,18 +52,26 @@ else if on_ground
 	{
 		state = 5;
 	}
-	else if move_direction!=0  && (state == 0 || state == 5|| state == 9)
+	else if move_direction!=0  && (state == 0 || state == 5|| state == 9 || state == 10)
 	{
 		state = 8;
 	}
-	else if move_direction ==0 && (state == 8 || state == 5||state == 9)
+	else if move_direction ==0 && (state == 8 || state == 5||state == 9 || state == 10 )
 	{
 		state =0;
 	}
 }
 else if on_ground == false 
 {
-	if move_y < 0  && (state == 0 ||state == 5 ||state == 8)
+	if right_wall_grab_pressed && right_have_wall && (state == 7 ||state == 9)
+	{
+		state = 10;
+	}
+	else if left_wall_grab_pressed && left_have_wall && (state == 7 ||state == 9)
+	{
+		state = 10;
+	}
+	else if move_y < 0  && (state == 0 ||state == 5 ||state == 8)
 	{
 		state = 7;
 	}

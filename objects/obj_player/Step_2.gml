@@ -68,6 +68,11 @@ else if state == 8
 	// 修改人物朝向
 	image_xscale = face_direction;
 }
+else if state == 10
+{
+	sprite_index = spr_player_wallgrabing;
+	image_xscale = -face_direction;
+}
 else
 {
 	show_debug_message("player1 状态出错!");

@@ -5,6 +5,8 @@ attack_pressed = false;
 shoot_pressed = false;
 crouch_pressed = false;
 dash_pressed = false;
+left_wall_grab_pressed = false;
+right_wall_grab_pressed = false;
 space_holding = false;
 
 
@@ -22,6 +24,9 @@ face_direction = 1;
 
 on_ground = true;
 under_ceiling = false;
+left_have_wall = false;
+right_have_wall = false;
+
 
 
 // 状态变量
@@ -37,7 +42,8 @@ dashing = false;	// 6
 rising = false;		// 7
 running = false;	// 8
 falling = false;	// 9
-landing = false;	// 10
+wallgrabing = false;	// 10
+
 
 
 // 状态变量的附属变量
