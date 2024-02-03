@@ -48,8 +48,8 @@
   },
   "origin": 0,
   "parent": {
-    "name": "environment",
-    "path": "folders/Sprites/environment.yy",
+    "name": "wall",
+    "path": "folders/Sprites/environment/wall.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

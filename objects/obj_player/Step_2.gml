@@ -54,7 +54,7 @@ else if state == 4
 {
 	sprite_index = spr_player_jumping;
 }
-else if state == 7
+else if state == 7 || state == 11
 {
 	// 修改动画
 	sprite_index = spr_player_rising;

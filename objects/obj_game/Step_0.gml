@@ -7,5 +7,5 @@ if instance_exists(obj_player) == false
 }
 
 
-
+show_debug_message("fps"+string(game_get_speed(fps_real)))
 

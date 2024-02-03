@@ -12,15 +12,16 @@ space_holding = false;
 
 // 属性变量
 hp = 5;
-grav = 0.5;
+grav = 0.4;
 move_speed = 2.5;
-jump_speed = 6;
+jump_speed = 5;
 
 // 控制变量
 move_x = 0;
 move_y = 0;
 move_direction = 0;
 face_direction = 1;
+temp_direction = 0;
 
 on_ground = true;
 under_ceiling = false;
@@ -52,3 +53,4 @@ hurting_force = 0;
 jump_num = 0;
 dash_num = 0;
 jump_once = 0;
+attack_jump_once = 0;

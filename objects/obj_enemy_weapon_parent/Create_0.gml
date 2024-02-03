@@ -5,7 +5,6 @@ attack = 1;
 
 attack_force = 0.02;
 
-enable = true;
 
 
 

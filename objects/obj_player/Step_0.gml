@@ -17,40 +17,32 @@ else if state == 6
 }
 else if state == 10
 {
-	if left_have_wall && left_wall_grab_pressed
-	{
-		for (var _i = 1; _i <= 5; _i++) 
-		{
-			if place_meeting(x-12-_i,y,obj_platform_parent) 
-			{
-				move_x = -_i+1;
-				break;
-			}
-		}
-	}
-	else if right_have_wall && right_wall_grab_pressed
-	{
-		for (var _i = 1; _i <= 5; _i++) 
-		{
-			if place_meeting(x+12+_i,y,obj_platform_parent) 
-			{
-				move_x = _i-1;
-				break;
-			}
-		}
-	}
+	show_debug_message("face_direction"+string(face_direction));
+	if (left_have_wall && right_wall_grab_pressed)||(right_have_wall && left_wall_grab_pressed) move_x = face_direction*move_speed;
 	else move_x = 0;
+}
+else if state == 11
+{
+	move_x = temp_direction * move_speed;
 }
 else
 {
 	move_x = move_direction * move_speed;
 }
 
+// 横向移动防卡墙？？？
 
-if state == 4 && jump_once == 0
+
+if (state == 4) && jump_once == 0
 {
 	jump_once = 1;
 	move_y = -jump_speed;
+	move_and_collide(move_x,move_y,obj_platform_parent);
+}
+else if (state == 11) && jump_once == 0
+{
+	jump_once = 1;
+	move_y = -jump_speed*0.8;
 	move_and_collide(move_x,move_y,obj_platform_parent);
 }
 else if on_ground || state == 6
@@ -60,7 +52,7 @@ else if on_ground || state == 6
 }
 else if state == 10
 {
-	move_y = jump_speed/6;
+	move_y = jump_speed/10;
 	move_and_collide(move_x,move_y,obj_platform_parent);
 }
 else//非跳跃帧，空中或者落地
@@ -72,6 +64,15 @@ else//非跳跃帧，空中或者落地
 	// 最大下落速度限制
 	move_y = min(move_y,jump_speed);
 	
+	// 电锯反弹
+	if instance_exists(obj_knife)
+	{
+		if obj_knife.collide_with_saw && attack_jump_once == 0
+		{
+			attack_jump_once += 1;
+			move_y = -jump_speed*0.6;
+		}
+	}
 	
 	// 落地检测，避免卡墙
 	if place_meeting(x,y+move_y,obj_platform_parent)&&place_meeting(x,y+2,obj_platform_parent)!=true
