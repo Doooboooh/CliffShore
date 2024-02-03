@@ -14,15 +14,16 @@ space_holding = keyboard_check(vk_space)||keyboard_check(ord("K"))
 // 地面检测
 if place_meeting(x,y+2,obj_platform_parent) on_ground = true;
 else on_ground = false;
-if place_meeting(x,y+34,obj_platform_parent) under_ceiling = true;
+if place_meeting(x,y-5,obj_platform_parent) under_ceiling = true;
 else under_ceiling = false;
+show_debug_message("underceiling"+string(under_ceiling));
 // 墙体检测
 if place_meeting(x-2,y,obj_platform_parent) left_have_wall = true;
 else left_have_wall = false;
 if place_meeting(x+2,y,obj_platform_parent) right_have_wall = true;
 else right_have_wall = false;
-show_debug_message("left_have_wall"+string(left_have_wall));
 
+show_debug_message("jump_num"+string(jump_num));
 // 状态控制
 if attack_pressed&&  (state == 0 || state == 5 || state == 7 || state == 8 || state == 9)
 {
@@ -37,6 +38,7 @@ else if shoot_pressed&& (state == 0 || state == 5 || state == 7 || state == 8 ||
 }
 else if jump_pressed && jump_num <2 && (state == 0 || state == 5 ||state == 7||state == 8 ||state == 9||state == 10)
 {
+	
 	if state == 10
 	{
 		temp_direction = -face_direction;
@@ -51,10 +53,10 @@ else if jump_pressed && jump_num <2 && (state == 0 || state == 5 ||state == 7||s
 		jump_num += 1;
 	}
 }
-else if dash_pressed && once && dash_num<1
+else if dash_pressed && dash_num<1
 {
 	state = 6;
-	alarm_set(2,24);
+	alarm_set(2,16);
 	dash_num += 1;
 }
 else if on_ground
@@ -96,7 +98,7 @@ else if on_ground == false
 	}
 }
 
-if on_ground ||state == 10
+if (on_ground&&state == 0||state == 8) ||state == 10
 {
 	jump_num =0;
 	if state != 6 dash_num = 0;

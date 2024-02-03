@@ -37,5 +37,5 @@
     "path": "sprites/spr_knife/spr_knife.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

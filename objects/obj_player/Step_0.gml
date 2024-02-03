@@ -45,7 +45,7 @@ else if (state == 11) && jump_once == 0
 	move_y = -jump_speed*0.8;
 	move_and_collide(move_x,move_y,obj_platform_parent);
 }
-else if on_ground || state == 6
+else if on_ground ||state == 6
 {
 	move_y = 0;
 	move_and_collide(move_x,move_y,obj_platform_parent);
@@ -55,6 +55,7 @@ else if state == 10
 	move_y = jump_speed/10;
 	move_and_collide(move_x,move_y,obj_platform_parent);
 }
+
 else//非跳跃帧，空中或者落地
 {
 	// 可变化跳跃高度
@@ -64,13 +65,27 @@ else//非跳跃帧，空中或者落地
 	// 最大下落速度限制
 	move_y = min(move_y,jump_speed);
 	
+	// 避免卡在天花板
+	if place_meeting(x,y+move_y,obj_platform_parent)&&place_meeting(x,y-2,obj_platform_parent)!=true
+	{
+		for (var _i = 1; _i <= abs(move_y); _i++) 
+		{
+			if place_meeting(x,y-_i,obj_platform_parent) 
+			{
+				y=y-_i+1;
+				move_y = 0;
+				break;
+			}
+		}
+	}
+	
 	// 电锯反弹
 	if instance_exists(obj_knife)
 	{
 		if obj_knife.collide_with_saw && attack_jump_once == 0
 		{
 			attack_jump_once += 1;
-			move_y = -jump_speed*0.6;
+			move_y = -jump_speed*1.3;
 		}
 	}
 	
@@ -79,7 +94,7 @@ else//非跳跃帧，空中或者落地
 	{
 		for (var _i = 1; _i <= move_y; _i++) 
 		{
-			if place_meeting(x,y+_i,obj_platform_parent) 
+			if place_meeting(x,y+_i,obj_platform_parent)
 			{
 				y=y+_i-1;
 				move_and_collide(move_x,0,obj_platform_parent)

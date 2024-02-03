@@ -3,6 +3,7 @@
 
 collide_with_saw = false;
 
+speed = 0;
 // Inherit the parent event
 event_inherited();
 
