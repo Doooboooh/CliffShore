@@ -33,6 +33,7 @@ right_have_wall = false;
 // 状态变量
 state = 0;
 once = true;
+no_effect = false;
 idle = true;		// 0
 hurting = false;	// 1
 attacking = false;	// 2
