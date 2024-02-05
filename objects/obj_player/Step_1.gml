@@ -16,14 +16,14 @@ if place_meeting(x,y+2,obj_platform_parent) on_ground = true;
 else on_ground = false;
 if place_meeting(x,y-5,obj_platform_parent) under_ceiling = true;
 else under_ceiling = false;
-show_debug_message("underceiling"+string(under_ceiling));
+//show_debug_message("underceiling"+string(under_ceiling));
 // 墙体检测
 if place_meeting(x-2,y,obj_platform_parent) left_have_wall = true;
 else left_have_wall = false;
 if place_meeting(x+2,y,obj_platform_parent) right_have_wall = true;
 else right_have_wall = false;
 
-show_debug_message("jump_num"+string(jump_num));
+//show_debug_message("jump_num"+string(jump_num));
 // 状态控制
 if attack_pressed&&  (state == 0 || state == 5 || state == 7 || state == 8 || state == 9)
 {
@@ -103,5 +103,5 @@ if (on_ground&&state == 0||state == 8) ||state == 10
 	jump_num =0;
 	if state != 6 dash_num = 0;
 }
-show_debug_message("on_ground"+string(on_ground))
-show_debug_message("state"+string(state))
+//show_debug_message("on_ground"+string(on_ground))
+//show_debug_message("state"+string(state))

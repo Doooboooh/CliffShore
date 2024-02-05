@@ -17,7 +17,7 @@ else if state == 6
 }
 else if state == 10
 {
-	show_debug_message("face_direction"+string(face_direction));
+	//show_debug_message("face_direction"+string(face_direction));
 	if (left_have_wall && right_wall_grab_pressed)||(right_have_wall && left_wall_grab_pressed) move_x = face_direction*move_speed;
 	else move_x = 0;
 }
