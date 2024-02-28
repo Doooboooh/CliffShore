@@ -1,18 +1,18 @@
 /// @description 位置控制
 
-if hurting
+if state == 1
 {
 	move_x = -hurting_direction*hurting_force;
 }
-else if attacking
+else if state == 2
 {
 	move_x = 0;
 }
-else if walking
+else if state == 3
 {
 	move_x = move_direction*move_speed;
 }
-else if idle
+else if state == 0
 {
 	move_x = 0;
 }

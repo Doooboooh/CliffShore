@@ -1,9 +1,7 @@
-/// @description 受伤时长 
+/// @description 受伤
 // 你可以在此编辑器中写入代码 
 
-hurting = false;
-idle = true;
-
+state = 0;
 
 
 

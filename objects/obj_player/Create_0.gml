@@ -9,9 +9,18 @@ left_wall_grab_pressed = false;
 right_wall_grab_pressed = false;
 space_holding = false;
 
+// 游戏进程属性
+can_attack = false;
+can_shoot = false;
+can_dash = false;
+can_doublejump = false;
+can_slidewall = false;
+have_key = false;
+
 
 // 属性变量
-hp = 5;
+hp = 10;
+arrow_num = 0;
 grav = 0.4;
 move_speed = 2.5;
 jump_speed = 5;
@@ -52,6 +61,7 @@ wallgrabing = false;	// 10
 hurting_direction = 0;
 hurting_force = 0;
 jump_num = 0;
+max_jump_num = 1;
 dash_num = 0;
 jump_once = 0;
 attack_jump_once = 0;

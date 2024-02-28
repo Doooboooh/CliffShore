@@ -4,20 +4,22 @@
 
 if instance_exists(obj_player)
 {
-	if abs(obj_player.x-x)<80&&sign(obj_player.x-x)*image_xscale>0&& attacking ==false
+	attack_pressed = abs(obj_player.x-x)<80&&sign(obj_player.x-x)*image_xscale>0
+	if attack_pressed && (state == 0 || state == 3)
 	{
-		attacking = true;
-		attacking_direction = image_xscale;
-		alarm_set(9,60);
-		alarm_set(10,160);
+		state = 2;
+		alarm_set(10,120)
 	}
-	else if idle
+	else if move_direction !=0 && state == 0 
 	{
-		walking = true;
-		idle = false;
-		alarm_set(11,180);
+		state = 3;	
 	}
-}
+	else if move_direction ==0 && (state == 3)
+	{
+		state =0;
+	}
+}	
+show_debug_message("state"+string(state))
 
 
 

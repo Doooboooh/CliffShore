@@ -5,10 +5,10 @@ left_wall_grab_pressed = keyboard_check(ord("A"));
 move_direction = right_wall_grab_pressed-left_wall_grab_pressed;
 if move_direction != 0 face_direction = move_direction;
 jump_pressed = keyboard_check_pressed(vk_space)||keyboard_check_pressed(ord("K")) ;
-attack_pressed =  keyboard_check(ord("J"));
-shoot_pressed =  keyboard_check(ord("I"));
+attack_pressed = keyboard_check(ord("J"))&&can_attack;
+shoot_pressed =  keyboard_check(ord("I"))&&can_shoot;
 crouch_pressed = keyboard_check(ord("S"));
-dash_pressed = keyboard_check(ord("L"));
+dash_pressed = keyboard_check(ord("L"))&&can_dash;
 space_holding = keyboard_check(vk_space)||keyboard_check(ord("K"))
 
 // 地面检测
@@ -23,23 +23,30 @@ else left_have_wall = false;
 if place_meeting(x+2,y,obj_platform_parent) right_have_wall = true;
 else right_have_wall = false;
 
+//
+if can_doublejump max_jump_num = 2;
+else max_jump_num = 1;
+
 //show_debug_message("jump_num"+string(jump_num));
 // 状态控制
 if attack_pressed&&  (state == 0 || state == 5 || state == 7 || state == 8 || state == 9)
 {
 	state = 2;
 	alarm_set(1,18);
+	audio_play_sound(snd_sword_swing,10,false);
 }
-else if shoot_pressed&& (state == 0 || state == 5 || state == 7 || state == 8 || state == 9)
+else if shoot_pressed&& (state == 0 || state == 5 || state == 7 || state == 8 || state == 9) && arrow_num >=1
 {
 	state = 3;
+	arrow_num -= 1;
 	alarm_set(4,18);
 	alarm_set(5,10);
+	audio_play_sound(snd_shoot_arrow,10,false);
 }
-else if jump_pressed && jump_num <2 && (state == 0 || state == 5 ||state == 7||state == 8 ||state == 9||state == 10)
+else if jump_pressed && jump_num <max_jump_num && (state == 0  ||state == 7||state == 8 ||state == 9||state == 10)
 {
 	
-	if state == 10
+	if state == 10 
 	{
 		temp_direction = -face_direction;
 		face_direction = temp_direction;
@@ -68,6 +75,7 @@ else if on_ground
 	else if move_direction!=0  && (state == 0 || state == 5||state == 7|| state == 9 || state == 10)
 	{
 		state = 8;
+		audio_play_sound(snd_run,10,true);
 	}
 	else if move_direction ==0 && (state == 5 ||state == 7|| state == 8||state == 9 || state == 10 )
 	{
@@ -76,11 +84,11 @@ else if on_ground
 }
 else if on_ground == false 
 {
-	if right_wall_grab_pressed && right_have_wall && (state == 7 ||state == 9)
+	if right_wall_grab_pressed && right_have_wall && (state == 7 ||state == 9) && can_slidewall
 	{
 		state = 10;
 	}
-	else if left_wall_grab_pressed && left_have_wall && (state == 7 ||state == 9)
+	else if left_wall_grab_pressed && left_have_wall && (state == 7 ||state == 9) && can_slidewall
 	{
 		state = 10;
 	}
@@ -103,5 +111,7 @@ if (on_ground&&state == 0||state == 8) ||state == 10
 	jump_num =0;
 	if state != 6 dash_num = 0;
 }
+
+if state != 8 audio_stop_sound(snd_run);
 //show_debug_message("on_ground"+string(on_ground))
 //show_debug_message("state"+string(state))

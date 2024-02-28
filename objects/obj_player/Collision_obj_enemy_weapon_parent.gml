@@ -12,6 +12,8 @@ if state != 1 && no_effect == false
 	
 	no_effect = true;
 	alarm_set(7,90);
+	
+	audio_play_sound(snd_player_hurt,20,false);
 }
 
 

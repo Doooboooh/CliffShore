@@ -23,7 +23,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"6ff785bd-5e27-4c23-bc6a-0bbec1c9c7d6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 1,
+  "origin": 0,
   "parent": {
     "name": "wall",
     "path": "folders/Sprites/environment/wall.yy",
@@ -59,7 +59,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 16,
+    "xorigin": 0,
     "yorigin": 0,
   },
   "swatchColours": null,

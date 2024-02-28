@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_enemy_knife",
-    "path": "sprites/spr_enemy_knife/spr_enemy_knife.yy",
+    "name": "spr_enemy_kinfe",
+    "path": "sprites/spr_enemy_kinfe/spr_enemy_kinfe.yy",
   },
   "spriteMaskId": null,
   "visible": true,

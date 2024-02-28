@@ -6,7 +6,7 @@ if _room_name == "rm_1_1" && obj_player.move_x>0
 {
 	room_goto(rm_1_2);
 	obj_player.x = 16;
-	obj_player.y = 224;
+	obj_player.y = 192;
 }
 else if _room_name == "rm_1_2" 
 {
@@ -196,8 +196,8 @@ else if _room_name == "rm_2_3"
 	else if obj_player.move_x>0 && obj_player.x>room_width-_block_size
 	{
 		room_goto(rm_2_4);
-		obj_player.x = 16;
-		obj_player.y = 640;
+		obj_player.x = 1168;
+		obj_player.y = 672;
 	}
 }
 else if _room_name == "rm_2_4"
@@ -220,7 +220,7 @@ else if _room_name == "rm_2_5"
 	if obj_player.x<_block_size
 	{
 		room_goto(rm_1_9);
-		obj_player.x = 448;
+		obj_player.x = 432;
 		obj_player.y = 64;
 	}
 	else if obj_player.x>room_width-_block_size

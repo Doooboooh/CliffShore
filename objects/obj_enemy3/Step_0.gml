@@ -3,7 +3,7 @@
 
 if hurting
 {
-	speed = 0;
+	speed = -0.5;
 }
 else speed = move_speed;
 

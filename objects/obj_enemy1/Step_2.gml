@@ -6,26 +6,25 @@ if hp <= 0
 	instance_destroy();
 }
 // 受伤时间
-else if hurting
+else if state == 1
 {
 	sprite_index = spr_enemy1_hurt;
 }
-else if attacking
+else if state == 2 && once
 {
+	once = false;
 	sprite_index = spr_enemy1_attack;
+	var _enemy_knife = instance_create_layer(x,y,layer,obj_enemy_knife);
+	_enemy_knife.image_xscale = image_xscale;
 }
-else if walking
+else if state == 3
 {
 	sprite_index = spr_enemy1_walk;
-	image_xscale = sign(move_direction);
+	if move_direction!=0  image_xscale = sign(move_direction);
 }
-else if idle
+else if state == 0
 {
 	sprite_index = spr_enemy1_idle;
-}
-else
-{
-	show_debug_message("enemy1 状态错误!");
 }
 
 

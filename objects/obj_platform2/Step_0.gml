@@ -9,7 +9,7 @@ if instance_exists(obj_player)
 	else sprite_index = spr_platform2;
 }
 
-
+if keyboard_check(ord("K"))&&keyboard_check(ord("S")) sprite_index = spr_platform2_air;
 
 
 

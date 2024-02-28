@@ -11,14 +11,20 @@ move_speed = 0.5;
 move_x = 0;
 move_y = 0;
 move_direction = choose(-1,1);
+attack_pressed = false;
 
 // 状态变量
-hurting = false;
-attacking = false;
-walking = false;
-idle = true;
+state = 0;
+idle = true;		// 0
+hurting = false;	// 1
+attacking = false;	// 2
+walking = false;	// 3
+once = true;
+
 
 // 状态变量附加变量
 hurting_direction = 0;
 hurting_force = 0;
 attacking_direction = 1;
+
+alarm_set(11,60);

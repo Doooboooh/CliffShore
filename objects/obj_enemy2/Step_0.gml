@@ -1,41 +1,22 @@
-/// @description 在此处插入描述 
-// 你可以在此编辑器中写入代码 
+/// @description 位置控制
 
-if skilling1 
+if state == 1
 {
-	if alarm_get(1) >= 90 move_x = move_distance/90;
-	else  move_x = -move_distance/90
+	move_x = -hurting_direction*hurting_force;
 }
-else if hurting
+else if state == 3
 {
-	move_x = 0;
+	move_x = move_direction*move_speed;
 }
-else if skilling2
-{
-	move_x = 0;
-}
-else if attacking
-{
-	move_x = 0;
-}
-else if walking
-{
-	move_x = move_direction*move_distance/60;
-}
-else if idle
+else if state == 0
 {
 	move_x = 0;
 }
 else
 {
-	show_debug_message("enemy1 状态错误!");
+	show_debug_message("enemy2 状态错误!");
 }
 
 move_y = 0;
 
-x += move_x;
-y += move_y;
-
-
-
-
+move_and_collide(move_x,move_y,obj_platform);

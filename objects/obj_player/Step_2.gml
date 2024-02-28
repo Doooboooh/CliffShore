@@ -22,7 +22,19 @@ else if state == 2
 	if on_ground == false && once
 	{
 		once = false;
-		if right_wall_grab_pressed
+		if keyboard_check(ord("W"))
+		{
+			sprite_index = spr_player_attack3;
+			var _knife = instance_create_layer(x+20,y-30,layer,obj_knife);
+			_knife.image_angle = 90;
+		}
+		else if keyboard_check(ord("S"))
+		{
+			sprite_index = spr_player_attack3;
+			var _knife = instance_create_layer(x-20,y+10,layer,obj_knife);
+			_knife.image_angle = 270;
+		}
+		else if right_wall_grab_pressed
 		{
 			sprite_index = spr_player_attack3;
 			if right_have_wall 
@@ -50,18 +62,6 @@ else if state == 2
 				_knife.image_xscale = -1;
 			}
 		}
-		else if keyboard_check(ord("W"))
-		{
-			sprite_index = spr_player_attack3;
-			var _knife = instance_create_layer(x+20,y-30,layer,obj_knife);
-			_knife.image_angle = 90;
-		}
-		else if keyboard_check(ord("S"))
-		{
-			sprite_index = spr_player_attack3;
-			var _knife = instance_create_layer(x-20,y+10,layer,obj_knife);
-			_knife.image_angle = 270;
-		}
 		else
 		{	
 			sprite_index = spr_player_attack3;
@@ -72,7 +72,13 @@ else if state == 2
 	else if once
 	{
 		once = false;
-		if right_wall_grab_pressed
+		if keyboard_check(ord("W"))
+		{
+			sprite_index = spr_player_attack3;
+			var _knife = instance_create_layer(x+20,y-30,layer,obj_knife);
+			_knife.image_angle = 90;
+		}
+		else if right_wall_grab_pressed
 		{
 			sprite_index = spr_player_attack3;
 			var _knife = instance_create_layer(x+10,y,layer,obj_knife);
@@ -83,12 +89,6 @@ else if state == 2
 			sprite_index = spr_player_attack3;
 			var _knife = instance_create_layer(x-10,y,layer,obj_knife);
 			_knife.image_xscale = -1;
-		}
-		else if keyboard_check(ord("W"))
-		{
-			sprite_index = spr_player_attack3;
-			var _knife = instance_create_layer(x+20,y-30,layer,obj_knife);
-			_knife.image_angle = 90;
 		}
 		else 
 		{
