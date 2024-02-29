@@ -8,7 +8,7 @@ if !surface_exists(surf)
     surface_set_target(surf);
     draw_set_colour(c_black);
     draw_set_alpha(0);
-    draw_rectangle(0, 0, _cw, _cw, false);
+    draw_rectangle(0, 0, _cw, _ch, false);
     surface_reset_target();
     }
 else if (surface_exists(surf)) {
@@ -18,14 +18,14 @@ else if (surface_exists(surf)) {
 	var _cy = camera_get_view_y(view_camera[0]);
 	surface_set_target(surf);
 	draw_set_color(c_black);
-	draw_set_alpha(0.9);
-	draw_rectangle(0, 0, _cw, _ch, 0);
+	draw_set_alpha(0.6);
+	draw_rectangle(0, 0, _cw, _ch, false);
 	gpu_set_blendmode(bm_subtract);
 	with (obj_light_parent)
 	{
-		var _sw = sprite_width / 2;
-		var _sh = sprite_height / 2;
-		draw_sprite_ext(spr_light, 0, x - _cx, y - _sh - _cy, 1, 1, 0, c_white, 1);  
+		draw_set_color(c_white)
+		draw_set_circle_precision(32)
+		draw_circle(x-_cx,y-16-_cy,100,false);
 	}
 	gpu_set_blendmode(bm_normal);
 	draw_set_alpha(1);
