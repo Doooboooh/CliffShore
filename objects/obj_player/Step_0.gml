@@ -31,7 +31,7 @@ else
 }
 
 // 横向移动防卡墙？？？
-
+true_move_x = move_x;
 
 if (state == 4) && jump_once == 0
 {
@@ -82,7 +82,7 @@ else//非跳跃帧，空中或者落地
 	// 电锯反弹
 	if instance_exists(obj_knife)
 	{
-		if obj_knife.collide_with_saw && attack_jump_once == 0
+		if (obj_knife.collide_with_saw||obj_knife.collide_with_enemy)&& keyboard_check(ord("S")) && attack_jump_once == 0
 		{
 			attack_jump_once += 1;
 			move_y = -jump_speed*1.3;

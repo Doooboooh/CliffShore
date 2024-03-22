@@ -17,6 +17,13 @@ else
 	show_debug_message("enemy2 状态错误!");
 }
 
-move_y = 0;
+if on_ground
+{
+	move_y = 0;
+}
+else
+{
+	move_y += grav;
+}
 
 move_and_collide(move_x,move_y,obj_platform);

@@ -3,7 +3,7 @@
 
 if instance_exists(obj_player)
 {
-	move_x = obj_player.move_x;
+	move_x = obj_player.true_move_x;
 	move_y = obj_player.move_y;
 }
 x += move_x;

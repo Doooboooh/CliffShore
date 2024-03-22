@@ -29,10 +29,12 @@ else max_jump_num = 1;
 
 //show_debug_message("jump_num"+string(jump_num));
 // 状态控制
-if attack_pressed&&  (state == 0 || state == 5 || state == 7 || state == 8 || state == 9)
+if attack_pressed && attack_ready &&  (state == 0 || state == 5 || state == 7 || state == 8 || state == 9)
 {
 	state = 2;
-	alarm_set(1,18);
+	attack_ready = false;
+	alarm_set(1,18);// 18
+	alarm_set(8,24);// 
 	audio_play_sound(snd_sword_swing,10,false);
 }
 else if shoot_pressed&& (state == 0 || state == 5 || state == 7 || state == 8 || state == 9) && arrow_num >=1
@@ -60,10 +62,12 @@ else if jump_pressed && jump_num <max_jump_num && (state == 0  ||state == 7||sta
 		jump_num += 1;
 	}
 }
-else if dash_pressed && dash_num<1
+else if dash_pressed && dash_ready && dash_num<1
 {
 	state = 6;
+	dash_ready = false;
 	alarm_set(2,16);
+	alarm_set(9,26);
 	dash_num += 1;
 }
 else if on_ground

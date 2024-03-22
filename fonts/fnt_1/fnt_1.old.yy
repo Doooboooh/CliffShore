@@ -6,7 +6,7 @@
   "applyKerning": 0,
   "ascender": 9,
   "ascenderOffset": 0,
-  "bold": false,
+  "bold": true,
   "canGenerateBitmap": true,
   "charset": 0,
   "first": 0,

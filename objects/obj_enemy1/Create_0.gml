@@ -6,6 +6,7 @@ hp = 10;
 attack = 1;
 attack_force = 0.02;
 move_speed = 0.5;
+grav = 0.4;
 
 // 控制变量
 move_x = 0;
@@ -20,7 +21,7 @@ hurting = false;	// 1
 attacking = false;	// 2
 walking = false;	// 3
 once = true;
-
+on_ground = true;
 
 // 状态变量附加变量
 hurting_direction = 0;

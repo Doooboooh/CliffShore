@@ -13,8 +13,8 @@
     "path": "folders/Objects/environment/trap.yy",
   },
   "parentObjectId": {
-    "name": "obj_enemy_weapon_parent",
-    "path": "objects/obj_enemy_weapon_parent/obj_enemy_weapon_parent.yy",
+    "name": "obj_saw",
+    "path": "objects/obj_saw/obj_saw.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

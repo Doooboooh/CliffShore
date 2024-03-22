@@ -27,6 +27,7 @@ jump_speed = 5;
 
 // 控制变量
 move_x = 0;
+true_move_x = 0;
 move_y = 0;
 move_direction = 0;
 face_direction = 1;
@@ -36,6 +37,8 @@ on_ground = true;
 under_ceiling = false;
 left_have_wall = false;
 right_have_wall = false;
+attack_ready = true;
+dash_ready = true;
 
 
 

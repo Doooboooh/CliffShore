@@ -9,6 +9,7 @@ if !surface_exists(surf)
     draw_set_colour(c_black);
     draw_set_alpha(0);
     draw_rectangle(0, 0, _cw, _ch, false);
+	draw_set_colour(c_white);
     surface_reset_target();
     }
 else if (surface_exists(surf)) {
@@ -17,20 +18,29 @@ else if (surface_exists(surf)) {
 	var _cx = camera_get_view_x(view_camera[0]);
 	var _cy = camera_get_view_y(view_camera[0]);
 	surface_set_target(surf);
-	draw_set_color(c_black);
-	draw_set_alpha(0.6);
-	draw_rectangle(0, 0, _cw, _ch, false);
-	gpu_set_blendmode(bm_subtract);
-	with (obj_light_parent)
+	if  (real(string_char_at(room_get_name(room),4))==1 && real(string_char_at(room_get_name(room),6))<=6)|| (real(string_char_at(room_get_name(room),4))==4&& real(string_char_at(room_get_name(room),6))==4)
 	{
-		draw_set_color(c_white)
-		draw_set_circle_precision(32)
-		draw_circle(x-_cx,y-16-_cy,100,false);
+		// 地上不需要黑窗
 	}
-	gpu_set_blendmode(bm_normal);
-	draw_set_alpha(1);
-	surface_reset_target();
-	draw_surface(surf, _cx, _cy);
+	else
+	{
+		draw_set_color(c_black);
+		draw_set_alpha(0.6);
+		draw_rectangle(0, 0, _cw, _ch, false);
+		gpu_set_blendmode(bm_subtract);
+		with (obj_light_parent)
+		{
+			draw_set_color(c_white)
+			draw_set_circle_precision(32)
+			draw_circle(x-_cx,y-16-_cy,100,false);
+		}
+	}
+		gpu_set_blendmode(bm_normal);
+		draw_set_alpha(1);
+		surface_reset_target();
+	
+		draw_surface(surf, _cx, _cy);
+
 }
 
 

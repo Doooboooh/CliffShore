@@ -31,7 +31,7 @@ else if state == 2
 		else if keyboard_check(ord("S"))
 		{
 			sprite_index = spr_player_attack3;
-			var _knife = instance_create_layer(x-20,y+10,layer,obj_knife);
+			var _knife = instance_create_layer(x-20,y,layer,obj_knife);
 			_knife.image_angle = 270;
 		}
 		else if right_wall_grab_pressed

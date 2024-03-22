@@ -6,6 +6,7 @@ hp = 5;
 attack = 1;
 attack_force = 0.02;
 move_speed = 0.5;
+grav = 0.4;
 
 // 控制变量
 move_x = 0;
