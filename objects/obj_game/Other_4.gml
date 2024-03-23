@@ -34,4 +34,3 @@ window_set_rectangle(_xpos, _ypos, _view_width,_view_height );
 surface_resize(application_surface, _view_width, _view_height);
 
 
-

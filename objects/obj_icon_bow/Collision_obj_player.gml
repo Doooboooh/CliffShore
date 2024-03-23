@@ -1,8 +1,6 @@
 /// @description 在此处插入描述 
 // 你可以在此编辑器中写入代码 
 
-var _word = instance_create_layer(x-30,y-10,layer,obj_word);
-_word.words = "Press I to shoot arrows"
 obj_player.can_shoot = true;
 
 // 存档

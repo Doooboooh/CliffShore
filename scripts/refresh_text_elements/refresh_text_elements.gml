@@ -3,8 +3,8 @@ function refresh_text_elements()
     text_elements = [];
     
     //Set all the Scribble text we're going to cache to wrap
-    var _x =1200;
-    var _y = 0;
+    var _x = 640;
+    var _y = 40;
     
     //Iterate over all the content strings
     var _i = 0;
@@ -14,7 +14,7 @@ function refresh_text_elements()
         var _element = scribble(ChatterboxGetContent(chatterbox, _i));
         
         //Wrap our text so that it doesn't exceed the room's width
-        _element.wrap(1500);
+        _element.wrap(1400);
         
         //Create a new typist for the text element, and tell it to start typing in
         var _typist = scribble_typist().in(1, 5);
@@ -29,6 +29,7 @@ function refresh_text_elements()
         
         //Move down a bit to make each content string look like a paragraph
         _y += _element.get_height(_element) + 25;
+		show_debug_message (_element.get_height(_element));
         ++_i;
     }
     
@@ -72,7 +73,7 @@ function refresh_text_elements()
             var _element = scribble(_string);
             
             //Wrap our text so that it doesn't exceed the room's width
-            _element.wrap(room_width - 200);
+            _element.wrap(1400);
             
             //Create a new typist for the text element, and tell it to start typing in
             var _typist = scribble_typist().in(1, 5);

@@ -23,7 +23,6 @@
     {"name":"inst_3D0E47E5","path":"rooms/rm_4_4/rm_4_4.yy",},
     {"name":"inst_7B913BDC","path":"rooms/rm_4_4/rm_4_4.yy",},
     {"name":"inst_75A25C48","path":"rooms/rm_4_4/rm_4_4.yy",},
-    {"name":"inst_4207FE43","path":"rooms/rm_4_4/rm_4_4.yy",},
     {"name":"inst_401E3EE5","path":"rooms/rm_4_4/rm_4_4.yy",},
     {"name":"inst_4E9BB9B3","path":"rooms/rm_4_4/rm_4_4.yy",},
   ],
@@ -46,9 +45,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D0E47E5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"wall_connect","path":"objects/wall_connect/wall_connect.yy",},"properties":[],"rotation":90.0,"scaleX":1.0,"scaleY":1.0,"x":256.0,"y":320.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7B913BDC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":320.0,"y":224.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_75A25C48","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":224.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4207FE43","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"propertyId":{"name":"words","path":"objects/obj_word/obj_word.yy",},"value":"Demo is over\\nThank you for playing\\nHappy new year!",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_401E3EE5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":7.0,"x":480.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4E9BB9B3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":7.0,"x":-32.0,"y":0.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},

@@ -26,7 +26,6 @@
     {"name":"inst_6861BDD","path":"rooms/rm_1_6/rm_1_6.yy",},
     {"name":"inst_17587C51","path":"rooms/rm_1_6/rm_1_6.yy",},
     {"name":"inst_6FC6118A","path":"rooms/rm_1_6/rm_1_6.yy",},
-    {"name":"inst_60DAC58A","path":"rooms/rm_1_6/rm_1_6.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -50,9 +49,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6861BDD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":224.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_17587C51","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6FC6118A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"wall_connect","path":"objects/wall_connect/wall_connect.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":480.0,"y":32.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_60DAC58A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"propertyId":{"name":"words","path":"objects/obj_word/obj_word.yy",},"value":"You can jump into the cave or go forward",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":160.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":9,"SerialiseWidth":15,"TileCompressedData":[
 -56,-2147483648,4,90,91,92,93,-11,-2147483648,11,108,109,110,111,130,

@@ -1,8 +1,17 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -454,-243
+__PrivCrochet_tags: 
 title: Start
 ---
 Hi, welcome to the [rainbow]Scribblebox[/rainbow] example! [slant](Scribble 8.1.0 + Chatterbox 2.10.3)[/slant]
+<<wait>>
 This project shows you how to set up the two libraries and how to get them working with each other.
-
+<<wait>>
+Hi, welcome to the [rainbow]Scribblebox[/rainbow] example! [slant](Scribble 8.1.0 + Chatterbox 2.10.3)[/slant]
+<<wait>>
+This project shows you how to set up the two libraries and how to get them working with each other.
+<<wait>>
 -> Scribblewhat?
     <<jump Scribblebox>>
 -> Cool! Let's get started!
@@ -11,6 +20,9 @@ This project shows you how to set up the two libraries and how to get them worki
 Um... Bye then...
 <<stop>>
 ===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -150,64
+__PrivCrochet_tags: 
 title: Scribblebox
 ---
 Yknow, [rainbow]Scribblebox[/rainbow]!
@@ -37,6 +49,9 @@ Uh, if you're ok with that?
 Let's goooooo!
 <<jump Tutorial>>
 ===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: -154,-232
+__PrivCrochet_tags: 
 title: Tutorial
 ---
 [$9090FF]Scribble[/c] and [$FFFF90]Chatterbox[/c] are two different libraries that can be used separately or combined together.
@@ -52,6 +67,9 @@ title: Tutorial
 -> Go on...
 <<jump TheBasicIdea>>
 ===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 120,-230
+__PrivCrochet_tags: 
 title: TheBasicIdea
 ---
 The basic idea is that [$FFFF90]Chatterbox[/c] "drives" [$9090FF]Scribble[/c]. Whenever the player advances [$FFFF90]Chatterbox[/c] by selecting an option or continuing when [$FFFF90]Chatterbox[/c] is waiting, [$FFFF90]Chatterbox[/c] hands some text over to [$9090FF]Scribble[/c].

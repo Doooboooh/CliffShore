@@ -64,7 +64,6 @@
     {"name":"inst_34D04DB4","path":"rooms/rm_2_6/rm_2_6.yy",},
     {"name":"inst_4E81DE8A","path":"rooms/rm_2_6/rm_2_6.yy",},
     {"name":"inst_7EF6C213","path":"rooms/rm_2_6/rm_2_6.yy",},
-    {"name":"inst_44AF1C4C","path":"rooms/rm_2_6/rm_2_6.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -126,9 +125,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_34D04DB4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"wall_connect","path":"objects/wall_connect/wall_connect.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4E81DE8A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"wall_connect","path":"objects/wall_connect/wall_connect.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7EF6C213","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_check_point","path":"objects/obj_check_point/obj_check_point.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":224.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_44AF1C4C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"propertyId":{"name":"words","path":"objects/obj_word/obj_word.yy",},"value":"Show your intelligence",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":9,"SerialiseWidth":15,"TileCompressedData":[
 -3,-2147483648,-12,47,-3,-2147483648,1,33,-10,-2147483648,1,31,-3,-2147483648,1,

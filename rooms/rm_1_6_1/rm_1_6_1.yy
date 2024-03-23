@@ -101,13 +101,11 @@
     {"name":"inst_48151793","path":"rooms/rm_1_6_1/rm_1_6_1.yy",},
     {"name":"inst_39F19312","path":"rooms/rm_1_6_1/rm_1_6_1.yy",},
     {"name":"inst_4B9DB89E","path":"rooms/rm_1_6_1/rm_1_6_1.yy",},
-    {"name":"inst_6E66BE59","path":"rooms/rm_1_6_1/rm_1_6_1.yy",},
     {"name":"inst_1593584","path":"rooms/rm_1_6_1/rm_1_6_1.yy",},
     {"name":"inst_7AFB97F4","path":"rooms/rm_1_6_1/rm_1_6_1.yy",},
     {"name":"inst_3745B57","path":"rooms/rm_1_6_1/rm_1_6_1.yy",},
     {"name":"inst_1FC8D11A","path":"rooms/rm_1_6_1/rm_1_6_1.yy",},
     {"name":"inst_2DB7AA8F","path":"rooms/rm_1_6_1/rm_1_6_1.yy",},
-    {"name":"inst_3D4BD7BF","path":"rooms/rm_1_6_1/rm_1_6_1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -206,17 +204,11 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_48151793","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":32.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_39F19312","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":64.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4B9DB89E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1280.0,"y":96.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6E66BE59","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"propertyId":{"name":"words","path":"objects/obj_word/obj_word.yy",},"value":"Do you wonder what's beyond the cliff? \\nBut it seems we currently can't climb up there",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":448.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1593584","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy4","path":"objects/obj_enemy4/obj_enemy4.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7AFB97F4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy4","path":"objects/obj_enemy4/obj_enemy4.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":64.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3745B57","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":480.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1FC8D11A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":480.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2DB7AA8F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy2","path":"objects/obj_enemy2/obj_enemy2.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":768.0,"y":480.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3D4BD7BF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"propertyId":{"name":"words","path":"objects/obj_word/obj_word.yy",},"value":"”Achievement Unlocked: Curiosity!“",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1088.0,"y":64.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":17,"SerialiseWidth":40,"TileCompressedData":[
 -154,-2147483648,6,729,730,1491,1489,1491,1491,-34,-2147483648,6,793,794,1555,1553,1555,1555,-34,-2147483648,2,1184,1185,-4,802,-26,-2147483648,-3,0,-6,-2147483648,2,1178,1179,-3,802,-35,-2147483648,2,1181,

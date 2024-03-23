@@ -53,7 +53,6 @@
     {"name":"inst_5346C70F","path":"rooms/rm_2_7/rm_2_7.yy",},
     {"name":"inst_964C5D2","path":"rooms/rm_2_7/rm_2_7.yy",},
     {"name":"inst_4EA3B491","path":"rooms/rm_2_7/rm_2_7.yy",},
-    {"name":"inst_B4737B6","path":"rooms/rm_2_7/rm_2_7.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -104,9 +103,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5346C70F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_enemy3","path":"objects/obj_enemy3/obj_enemy3.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":128.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_964C5D2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_auto_wall","path":"objects/obj_auto_wall/obj_auto_wall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":480.0,"y":128.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4EA3B491","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_auto_wall","path":"objects/obj_auto_wall/obj_auto_wall.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":3.0,"x":-32.0,"y":128.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_B4737B6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"propertyId":{"name":"words","path":"objects/obj_word/obj_word.yy",},"value":"Be cautious of enemies\\n in the darkness",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":160.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":9,"SerialiseWidth":15,"TileCompressedData":[
 -15,47,1,33,-13,-2147483648,6,31,33,116,25,26,115,-5,-2147483648,

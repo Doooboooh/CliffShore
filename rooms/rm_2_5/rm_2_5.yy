@@ -48,7 +48,6 @@
     {"name":"inst_1445C0A9","path":"rooms/rm_2_5/rm_2_5.yy",},
     {"name":"inst_267F501F","path":"rooms/rm_2_5/rm_2_5.yy",},
     {"name":"inst_6B89148C","path":"rooms/rm_2_5/rm_2_5.yy",},
-    {"name":"inst_2823B195","path":"rooms/rm_2_5/rm_2_5.yy",},
     {"name":"inst_729F91E7","path":"rooms/rm_2_5/rm_2_5.yy",},
   ],
   "isDnd": false,
@@ -95,9 +94,6 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1445C0A9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"wall_connect","path":"objects/wall_connect/wall_connect.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_267F501F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"wall_connect","path":"objects/wall_connect/wall_connect.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-32.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6B89148C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_icon_key","path":"objects/obj_icon_key/obj_icon_key.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":160.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2823B195","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"properties":[
-            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_word","path":"objects/obj_word/obj_word.yy",},"propertyId":{"name":"words","path":"objects/obj_word/obj_word.yy",},"value":"Don't forget to save your game",},
-          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":128.0,"y":160.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_729F91E7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_check_point","path":"objects/obj_check_point/obj_check_point.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":160.0,"y":224.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":9,"SerialiseWidth":15,"TileCompressedData":[
