@@ -26,10 +26,7 @@
     "name": "player1",
     "path": "folders/Objects/Character/player/player1.yy",
   },
-  "parentObjectId": {
-    "name": "obj_light_parent",
-    "path": "objects/obj_light_parent/obj_light_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": true,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
