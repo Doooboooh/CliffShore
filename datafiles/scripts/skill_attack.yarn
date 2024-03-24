@@ -1,9 +1,10 @@
 #__PrivCrochet_version:1
 __PrivCrochet_colorID: 0
-__PrivCrochet_position: -456,-246
+__PrivCrochet_position: -456,-247
 __PrivCrochet_tags: 
 title: Start
 ---
-已获得能力：挥砍（按住w/s键进行上劈/下劈）
+已获得能力：挥砍（按J攻击）
+（按住W/S按下J以上/下劈）
 <<wait>>
 ===

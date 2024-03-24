@@ -110,6 +110,7 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"skill_doublejump.yarn","CopyToMask":-1,"filePath":"datafiles/scripts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"skill_shoot.yarn","CopyToMask":-1,"filePath":"datafiles/scripts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"skill_slide.yarn","CopyToMask":-1,"filePath":"datafiles/scripts",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"test.txt","CopyToMask":-1,"filePath":"datafiles/scripts",},
   ],
   "isEcma": false,
   "LibraryEmitters": [],
