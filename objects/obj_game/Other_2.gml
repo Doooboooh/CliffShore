@@ -40,4 +40,3 @@ else// 新存档
 audio_play_sound(snd_bgm,5,true);
 
 
-

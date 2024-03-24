@@ -1,5 +1,5 @@
 //Set the default font for Scribble to use
-scribble_font_set_default("fnt_antipasto32");
+scribble_font_set_default("fnt_chinese");
 
 //Load in our source file from Chatterbox
 ChatterboxLoadFromFile(file_name);

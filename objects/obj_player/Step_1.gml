@@ -1,16 +1,31 @@
 /// @description 按键输入和状态选择
 // 按键检测
-right_wall_grab_pressed = keyboard_check(ord("D"));
-left_wall_grab_pressed = keyboard_check(ord("A"));
-move_direction = right_wall_grab_pressed-left_wall_grab_pressed;
-if move_direction != 0 face_direction = move_direction;
-jump_pressed = keyboard_check_pressed(vk_space)||keyboard_check_pressed(ord("K")) ;
-attack_pressed = keyboard_check(ord("J"))&&can_attack;
-shoot_pressed =  keyboard_check(ord("I"))&&can_shoot;
-crouch_pressed = keyboard_check(ord("S"));
-dash_pressed = keyboard_check(ord("L"))&&can_dash;
-space_holding = keyboard_check(vk_space)||keyboard_check(ord("K"))
-
+if global.chat_is_over == true
+{
+	right_wall_grab_pressed = keyboard_check(ord("D"));
+	left_wall_grab_pressed = keyboard_check(ord("A"));
+	move_direction = right_wall_grab_pressed-left_wall_grab_pressed;
+	if move_direction != 0 face_direction = move_direction;
+	jump_pressed = keyboard_check_pressed(vk_space)||keyboard_check_pressed(ord("K")) ;
+	attack_pressed = keyboard_check(ord("J"))&&can_attack;
+	shoot_pressed =  keyboard_check(ord("I"))&&can_shoot;
+	crouch_pressed = keyboard_check(ord("S"));
+	dash_pressed = keyboard_check(ord("L"))&&can_dash;
+	space_holding = keyboard_check(vk_space)||keyboard_check(ord("K"))
+}
+else 
+{
+	right_wall_grab_pressed = false;
+	left_wall_grab_pressed = false;
+	move_direction = right_wall_grab_pressed-left_wall_grab_pressed;
+	if move_direction != 0 face_direction = move_direction;
+	jump_pressed = false;
+	attack_pressed =false;
+	shoot_pressed =  false;
+	crouch_pressed =false;
+	dash_pressed =false;
+	space_holding = false;
+}
 // 地面检测
 if place_meeting(x,y+2,obj_platform_parent) on_ground = true;
 else on_ground = false;

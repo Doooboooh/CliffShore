@@ -97,6 +97,12 @@ else if _room_name == "rm_1_6_1"
 		obj_player.x = 464;
 		obj_player.y = 224;
 	}
+	else if obj_player.x>room_width - _block_size
+	{
+		room_goto(rm_4_4);
+		obj_player.x = 16
+		obj_player.y = 224
+	}
 }
 else if _room_name == "rm_1_7"
 {
@@ -471,6 +477,12 @@ else if _room_name == "rm_4_4"
 		room_goto(rm_4_3);
 		obj_player.x = 160;
 		obj_player.y = 32;
+	}
+	else if obj_player.x<_block_size
+	{
+		room_goto(rm_1_6_1);
+		obj_player.x = 1280-_block_size;
+		obj_player.y = 96;
 	}
 }
 

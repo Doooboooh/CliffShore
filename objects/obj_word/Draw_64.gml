@@ -1,7 +1,7 @@
 /// @description 在此处插入描述 
 // 你可以在此编辑器中写入代码 
 
-draw_sprite(spr_box,0,600,0)
+draw_sprite(spr_box2,0,400,180)
 
 if (ChatterboxIsStopped(chatterbox))
 {
@@ -9,6 +9,11 @@ if (ChatterboxIsStopped(chatterbox))
     //In a real game you'd close the dialogue system and permit user interaction again
     //scribble("(Chatterbox stopped)").draw(10, 10);
 	global.chat_is_over = true;
+	var _room_name = room_get_name(room);
+	if _room_name == "rm_4_2"
+	{
+		instance_create_layer(0,0,"Instances",obj_snowflake)
+	}
 	instance_destroy();
 }
 else

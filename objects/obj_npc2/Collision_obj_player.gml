@@ -2,27 +2,34 @@
 // 你可以在此编辑器中写入代码 
 
 
-if obj_player.have_key state = 2;
+
 if keyboard_check((ord("W"))) && global.chat_is_over == true
 {
 	if state == 0 
 	{
 		state = 1;
-		chat("example.yarn");
+		chat("npc2_0.yarn");
 	}
 	else if state == 1
 	{
-		chat("example.yarn");
+		if obj_player.have_key
+		{
+			state = 2;
+		}
+		else 
+		{
+			chat("npc2_1.yarn");
+		}
 	}
 	else if state == 2 
 	{
 		state = 3;
-		chat("example.yarn");
+		chat("npc2_2.yarn");
 		instance_create_layer(x+64,y-64,"Instances",obj_icon_bow);
 	}
 	else if state == 3
 	{
-		chat("example.yarn");
+		chat("npc2_3.yarn");
 	}
 
 }

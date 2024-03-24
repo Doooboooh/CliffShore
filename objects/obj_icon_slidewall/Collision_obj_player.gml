@@ -1,8 +1,8 @@
 /// @description 在此处插入描述 
 // 你可以在此编辑器中写入代码 
 
-var _word = instance_create_layer(x,y-10,layer,obj_word);
-_word.words = "Now you can cling to the walls"
+chat2("skill_slide.yarn")
+
 obj_player.can_slidewall = true;
 
 if file_exists("checkpoint.ini")

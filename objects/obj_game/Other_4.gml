@@ -23,7 +23,7 @@ view_set_yport(view_current,0)
 view_wport[0] = _view_width;
 view_hport[0] = _view_height;
 
-view_camera[0] = camera_create_view(0, 0, 480, 270, 0, obj_player, -1, -1, 200, 130);
+view_camera[0] = camera_create_view(0, 0, 480, 270, 0, obj_player, -1, -1, 240, 135);
 
 
 var _dwidth = display_get_width();
@@ -33,4 +33,4 @@ var _ypos = (_dheight / 2) - _view_height/2;
 window_set_rectangle(_xpos, _ypos, _view_width,_view_height );
 surface_resize(application_surface, _view_width, _view_height);
 
-
+global.chat_is_over = true;
