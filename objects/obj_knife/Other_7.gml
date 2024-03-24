@@ -2,7 +2,7 @@
 // 你可以在此编辑器中写入代码 
 
 
-if instance_exists(obj_player) 
+if instance_exists(obj_player) &&collide_with_enemy
 {
 	obj_player.attack_jump_once = 0;
 	if obj_player.can_shoot

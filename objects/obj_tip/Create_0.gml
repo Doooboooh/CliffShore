@@ -14,4 +14,4 @@ ChatterboxJump(chatterbox, "Start");
 //Update our text elements
 refresh_text_elements();
 
-alarm_set(0,120);
+alarm_set(0,3600);
