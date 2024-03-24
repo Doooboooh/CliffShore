@@ -5,7 +5,7 @@
 
 if keyboard_check((ord("W"))) && global.chat_is_over == true
 {
-	chat("npc_skull.yarn")
+	chat2("npc_skull.yarn")
 	instance_destroy();
 }
 

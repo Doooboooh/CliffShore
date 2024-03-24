@@ -2,5 +2,5 @@
 function chat(_array){
 	global.chat_is_over = false;
 	show_debug_message("chat!")
-	instance_create_layer(0,0,"Instances",obj_word,{file_name:_array})
+	instance_create_layer(0,0,"Instances",obj_word,{file_name:"scripts/"+_array})
 }
