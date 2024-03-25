@@ -8,6 +8,7 @@ if room_get_name(room) == "rm_2_4"
 }
 else if room_get_name(room) == "rm_4_2"
 {
+	audio_stop_sound(snd_bgm);
 	audio_play_sound(snd_nizhuan,5,true);
 }
 

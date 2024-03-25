@@ -4,7 +4,7 @@
 if keyboard_check((ord("W"))) && global.chat_is_over == true
 {
 	image_xscale = -sign( obj_player.x - x)
-	if state == 0 && obj_player.can_attack == false
+	if state == 0
 	{
 		state = 1;
 		chat("npc1_0.yarn");

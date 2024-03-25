@@ -9,8 +9,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "environment",
-    "path": "folders/Objects/environment.yy",
+    "name": "npc",
+    "path": "folders/Objects/Character/npc.yy",
   },
   "parentObjectId": null,
   "persistent": false,

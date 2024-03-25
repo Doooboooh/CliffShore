@@ -12,7 +12,7 @@ if (ChatterboxIsStopped(chatterbox))
 	var _room_name = room_get_name(room);
 	if _room_name == "rm_4_2"
 	{
-		instance_create_layer(0,0,"Instances",obj_snowflake)
+		instance_create_layer(0,0,"Instances",obj_snowflake);
 	}
 	instance_destroy();
 }

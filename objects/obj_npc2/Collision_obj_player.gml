@@ -12,18 +12,16 @@ if keyboard_check((ord("W"))) && global.chat_is_over == true
 	}
 	else if state == 1
 	{
-		if obj_player.have_key
-		{
-			state = 2;
-			chat("npc2_2.yarn");
-			instance_create_layer(x+64,y-64,"Instances",obj_icon_bow);
-		}
-		else 
-		{
-			chat("npc2_1.yarn");
-		}
+		chat("npc2_1.yarn");
 	}
 	else if state == 2 
+	{
+		state = 3;
+		chat("npc2_2.yarn");
+		instance_create_layer(x+64,y-64,"Instances",obj_icon_bow);
+		
+	}
+	else if state == 3
 	{
 		chat("npc2_3.yarn");
 		
