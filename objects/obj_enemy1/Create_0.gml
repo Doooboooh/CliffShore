@@ -28,4 +28,6 @@ hurting_direction = 0;
 hurting_force = 0;
 attacking_direction = 1;
 
+// 附属物件
+_enemy_knife = obj_enemy_knife;
 alarm_set(11,60);
