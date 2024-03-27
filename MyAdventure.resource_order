@@ -217,6 +217,7 @@
     {"name":"scribble_color_set","order":1,"path":"scripts/scribble_color_set/scribble_color_set.yy",},
     {"name":"spr_player_landing","order":13,"path":"sprites/spr_player_landing/spr_player_landing.yy",},
     {"name":"refresh_text_elements_slow","order":5,"path":"scripts/refresh_text_elements_slow/refresh_text_elements_slow.yy",},
+    {"name":"spr_boss3_idle","order":7,"path":"sprites/spr_boss3_idle/spr_boss3_idle.yy",},
     {"name":"spr_hint1","order":2,"path":"sprites/spr_hint1/spr_hint1.yy",},
     {"name":"spr_player_crouch","order":17,"path":"sprites/spr_player_crouch/spr_player_crouch.yy",},
     {"name":"obj_arrow_trap_left","order":2,"path":"objects/obj_arrow_trap_left/obj_arrow_trap_left.yy",},

@@ -17,7 +17,7 @@ if alarm_get(0)<390
 }
 if alarm_get(0)<360
 {
-	draw_sprite(spr_npc1,0,416,224)
+	draw_sprite(spr_boss3_idle3,0,416,224)
 }
 
 

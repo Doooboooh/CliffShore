@@ -40,7 +40,7 @@ else if walking
 }
 else if idle
 {
-	sprite_index = spr_boss3_idle;
+	sprite_index = spr_boss3_idle3;
 }
 else
 {

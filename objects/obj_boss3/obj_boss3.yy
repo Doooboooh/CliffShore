@@ -38,8 +38,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_boss3_idle",
-    "path": "sprites/spr_boss3_idle/spr_boss3_idle.yy",
+    "name": "spr_boss3_idle3",
+    "path": "sprites/spr_boss3_idle3/spr_boss3_idle3.yy",
   },
   "spriteMaskId": null,
   "visible": true,
