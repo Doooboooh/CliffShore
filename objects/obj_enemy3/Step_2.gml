@@ -6,18 +6,21 @@ if hp<= 0
 	instance_create_layer(x,y,layer,obj_enemy3_defeated);
 	instance_destroy();
 }
-else if hurting
+else if state == 1
 {
 	sprite_index = spr_enemy3_hurt;
 }
-else if idle
+else if state == 2
 {
-	show_debug_message("idle");
+	sprite_index = spr_enemy3_try;
+}
+else if state == 3
+{
 	sprite_index = spr_enemy3_idle;
 }
-else
+else if state == 0
 {
-	show_debug_message("enemy3 状态错误!");
+	sprite_index = spr_enemy3_idle;
 }
 
 

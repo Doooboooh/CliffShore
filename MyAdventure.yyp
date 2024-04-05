@@ -420,6 +420,7 @@
     {"id":{"name":"ChatterboxGetCurrentMetadata","path":"scripts/ChatterboxGetCurrentMetadata/ChatterboxGetCurrentMetadata.yy",},},
     {"id":{"name":"scribble_font_scale","path":"scripts/scribble_font_scale/scribble_font_scale.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"spr_enemy3_try","path":"sprites/spr_enemy3_try/spr_enemy3_try.yy",},},
     {"id":{"name":"ChatterboxVariablesClearVisitedAll","path":"scripts/ChatterboxVariablesClearVisitedAll/ChatterboxVariablesClearVisitedAll.yy",},},
     {"id":{"name":"obj_gui","path":"objects/obj_gui/obj_gui.yy",},},
     {"id":{"name":"spr_tile_village2","path":"sprites/spr_tile_village2/spr_tile_village2.yy",},},

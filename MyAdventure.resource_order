@@ -341,6 +341,7 @@
     {"name":"scribble_font_has_character","order":11,"path":"scripts/scribble_font_has_character/scribble_font_has_character.yy",},
     {"name":"ChatterboxGetCurrentMetadata","order":2,"path":"scripts/ChatterboxGetCurrentMetadata/ChatterboxGetCurrentMetadata.yy",},
     {"name":"scribble_font_scale","order":13,"path":"scripts/scribble_font_scale/scribble_font_scale.yy",},
+    {"name":"spr_enemy3_try","order":5,"path":"sprites/spr_enemy3_try/spr_enemy3_try.yy",},
     {"name":"ChatterboxVariablesClearVisitedAll","order":4,"path":"scripts/ChatterboxVariablesClearVisitedAll/ChatterboxVariablesClearVisitedAll.yy",},
     {"name":"obj_gui","order":8,"path":"objects/obj_gui/obj_gui.yy",},
     {"name":"spr_tile_village2","order":1,"path":"sprites/spr_tile_village2/spr_tile_village2.yy",},

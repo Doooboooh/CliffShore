@@ -10,11 +10,14 @@
 // Inherit the parent event
 event_inherited();
 
-
-if hurting == false
+if state != 1
 {
-	hurting = true;
-	idle = false;
+
 	hp = hp - other.attack;
-	alarm_set(0,60);
+	hurting_direction = sign(other.x-x)
+	hurting_force = other.attack_force;
+	
+	state = 1;
+	alarm_set(0,20);
+	
 }

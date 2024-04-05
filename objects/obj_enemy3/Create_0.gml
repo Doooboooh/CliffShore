@@ -7,17 +7,19 @@ event_inherited();
 hp = 5;
 attack = 1;
 attack_force = 0.02;
-move_speed = 1;
+max_speed = 4;
 
 // 控制变量
-speed = move_speed;
-if instance_exists(obj_player) direction = point_direction(x, y, obj_player.x, obj_player.y)
-alarm_set(1,60);
+move_distance = 0;
+goal_distance = 0;
 
 // 状态变量
-hurting = false;
-walking = false;
-idle = true;
+state = 0;
+idle = true;		// 0
+hurting = false;	// 1
+trying = false;		// 2
+dashing = false;	// 3
 
 // 状态变量附加变量
-
+hurting_direction = 0;
+hurting_force = 0;
