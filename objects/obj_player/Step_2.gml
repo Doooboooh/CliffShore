@@ -141,6 +141,7 @@ else if state == 7 || state == 11
 else if state == 8
 {
 	// 修改动画
+	
 	sprite_index = spr_player_run;
 	// 修改人物朝向
 	image_xscale = face_direction;

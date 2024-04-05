@@ -68,3 +68,4 @@ max_jump_num = 1;
 dash_num = 0;
 jump_once = 0;
 attack_jump_once = 0;
+
