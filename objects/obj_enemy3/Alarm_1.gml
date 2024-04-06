@@ -6,7 +6,6 @@ if instance_exists(obj_player) && state == 2
 	direction = point_direction(x, y, obj_player.x, obj_player.y)
 	speed = 0
 	goal_distance = distance_to_object(obj_player)+50
-	show_debug_message(goal_distance)
 }
 
 
