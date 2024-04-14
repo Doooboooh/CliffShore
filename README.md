@@ -12,7 +12,7 @@ CliffShore是一款以战斗、跑酷为主要玩法的2D类银河恶魔城游�
 
 构建步骤：使用游戏引擎IDE的Release构建
 
-平台：Windows10+ & Android
+平台：Windows10+;[Android](https://github.com/Doooboooh/CliffShore_Android)
 
 成品：直接点击名为CliffShore的exe文件即可安装
 
